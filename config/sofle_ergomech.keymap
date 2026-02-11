@@ -1,0 +1,3 @@
+#include "../miryoku/custom_config.h"
+#include "../miryoku/mapping/58/sofle_ergomech.h"
+#include "../miryoku/miryoku.dtsi"

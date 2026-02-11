@@ -18,3 +18,28 @@
 #     artifact-name: corne_left_with_studio
 #
 ---
+include:
+  - board: nice_nano_v2
+    shield: settings_reset
+    artifact-name: settings_reset
+
+  - board: nice_nano_v2
+    shield: corne_left nice_view_adapter nice_view
+    snippet: miryoku
+    artifact-name: chocofi_left
+
+  - board: nice_nano_v2
+    shield: corne_right nice_view_adapter nice_view
+    snippet: miryoku
+    artifact-name: chocofi_right
+
+  - board: nice_nano_v2
+    shield: sofle_ergomech_left
+    snippet: studio-rpc-usb-uart miryoku
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: sofle_ergomech_left
+
+  - board: nice_nano_v2
+    shield: sofle_ergomech_right
+    snippet: miryoku
+    artifact-name: sofle_ergomech_right

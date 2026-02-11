@@ -1,0 +1,3 @@
+[submodule "modules/miryoku_zmk"]
+	path = modules/miryoku_zmk
+	url = https://github.com/manna-harbour/miryoku_zmk.git

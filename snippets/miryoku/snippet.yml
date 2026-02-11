@@ -1,0 +1,3 @@
+name: miryoku
+append:
+  DTS_EXTRA_CPPFLAGS: -iquote${ZMK_CONFIG}/miryoku;-iquote${ZMK_CONFIG}/../modules/miryoku_zmk/config

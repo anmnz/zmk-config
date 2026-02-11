@@ -4,11 +4,21 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    # Additional modules containing boards/shields/custom code can be listed here as well
-    # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
+    - name: ergomechstore
+      url-base: https://github.com/ergomechstore
+    - name: manna-harbour
+      url-base: https://github.com/manna-harbour
   projects:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
+    - name: sofle-hybrid-ergomech-zmk
+      remote: ergomechstore
+      revision: master
+      path: modules/sofle-hybrid-ergomech-zmk
+    - name: miryoku_zmk
+      remote: manna-harbour
+      revision: master
+      path: modules/miryoku_zmk
   self:
     path: config
